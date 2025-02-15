@@ -4,15 +4,15 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.ensemble import RandomForestRegressor
 
-'''
-READ IMPORTANT
-needed to complete app: 
--training/testing set for ML model
--visualisation of model performance(accuracy of the actual model(absolute error, squared error, absolute error))
--Show case the model by running multiple simulations where the temperature ranges, then using visualisation methods(scatter plot, graph ect) in order to show the 
-efficacy of the application
--calculation helper function needs to be finished: READ COMMENT INSIDE FUNCTION
-'''
+
+#READ IMPORTANT
+#needed to complete app: 
+#-training/testing set for ML model
+#-visualisation of model performance(accuracy of the actual model(absolute error, squared error, absolute error))
+#-Show case the model by running multiple simulations where the temperature ranges, then using visualisation methods(scatter plot, graph ect) in order to show the 
+#efficacy of the application
+#-calculation helper function needs to be finished: READ COMMENT INSIDE FUNCTION
+
 st.title("Random Forest Regressor model: Predict the best Chilled Water Temperature point depending on varying factors")
 def heat_pump_efficiency(external_temp, chilled_water_temp, heating_demand):
     """
