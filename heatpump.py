@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 LOGO = "https://github.com/BtotheM/Heat-Pump-Optimazation/blob/main/Teamlogo.png?raw=true"
 DATALINK = "https://github.com/BtotheM/Heat-Pump-Optimazation/blob/main/augmented_dataset.csv?raw=true"
-# css
+# ---- Inject Custom CSS ----
 st.markdown(
     """
     <style>
@@ -159,7 +159,7 @@ uploaded_file = DATALINK
 data = pd.read_csv(uploaded_file)
 data = CreateSyntheticCols(data)
 st.dataframe(data.head(100000))
-
+st.spinner(text= "Training Model")
 # Train Random Forest Model
 def train_heating_load_model(df):
     features = [
