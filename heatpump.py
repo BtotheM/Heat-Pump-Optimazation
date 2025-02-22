@@ -8,6 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 LOGO = "https://github.com/BtotheM/Heat-Pump-Optimazation/blob/main/Teamlogo.png?raw=true"
 DATALINK = "https://github.com/BtotheM/Heat-Pump-Optimazation/blob/main/augmented_dataset.csv?raw=true"
+# css
 st.markdown(
     """
     <style>
